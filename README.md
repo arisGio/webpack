@@ -86,3 +86,7 @@ npm i -D sass style-loader css-loader sass-loader --> you can use node sass, but
 
 before we add our loaders --> create a sass file
 & bring that into index.js
+
+if I do npm run buind it will show an error --> no loaders are configured to process this file
+--> rules array with an object for each loader or each file type
+--> in general I could create more css files, import them or use them
