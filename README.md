@@ -55,3 +55,7 @@ now we can import and export our own JS modules
 --> we can also use npm modules
 --> let's see an example even though we don't need this module for our initial purposes
 npm i uuid --> let's install UUID which will just generate a uuid number, if we just reload, it is not going to work, we have to rebuild it
+
+npm run build --> to rebuild it, so main.js now get's updated with the new code we previously wrote, and we can see this in the console too
+--> you can install any npm modules you want and use them
+--> now main.js is more complicated because we have that uuid code that's being compiled
