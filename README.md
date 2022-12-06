@@ -186,3 +186,8 @@ after importing it if you rebuild it you will get an error --> because we do not
 --> we want it to stay as laughing.svg otherwise it wiil be renamed to something weird
 
 after rebuilding --> we have laughing svg in dist folder
+
+## Finish The Joke App
+
+stop dev server
+install axios --> npm i axios
