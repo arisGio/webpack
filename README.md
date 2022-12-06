@@ -181,3 +181,6 @@ you might also want to load images
 eg you have a logo or something eg an svg you want to load in js file
 --> we want to be able to bring that by importing it
 after importing it if you rebuild it you will get an error --> because we do not have a loader for this
+--> there is nothing we even have to install
+--> webpack comes with this asset resource loader --> so we just have to add, eg after the babel loader...
+--> we want it to stay as laughing.svg otherwise it wiil be renamed to something weird
