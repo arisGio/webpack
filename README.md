@@ -35,3 +35,13 @@ later on we will see how we can install the webpack dev server plugin --> so we 
 ## Creating Modules
 
 focus on the environment that we are building, not the app
+error: cannot use import statement outside a module --> there is a way we can do this by adding type module to our package.json and all but...
+webpack is going to take care of this for us...
+
+## Webpack Install & Building
+
+npm init -y --> skip the questions, creates the package.json file
+
+npm i -D webpack webpack-cli --> install webpack & webpack-cli as dev dependencies, creates the package-lock.json file, in package.json you should see under dev dependecies the newly installed packages
+
+to run webpack we need to create a script
