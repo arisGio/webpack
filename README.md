@@ -117,3 +117,14 @@ google: caching webpack --> https://webpack.js.org/guides/caching/
 --> when they generate the assets --> they have some kind of hash --> and basically what happens is this will change every time the file changes --> which helps with caching
 
 delete dist folder and rebuild
+
+## Webpack Dev Server
+
+we can set up the webpack dev server
+we can make it auto reload as well which is nice
+
+--> add dev script to package.json
+--> npm run dev --> it will ask us if we want to install the webpack dev server --> y for YES
+
+--> default port: 8080, but we can change that
+--> stop server: CTRL + C
