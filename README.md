@@ -149,3 +149,5 @@ if we save that & run npm run build again it will add a new file
 clean: true --> will keep only one file and not 2 or more bundlehash1 bundlehash2 etc
 
 --> when you run the server, it's not running directly from the files in dist --> it's actually running it from memory
+
+change code in index.js & npm run build --> does not create additional bundle files
