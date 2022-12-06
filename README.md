@@ -90,3 +90,14 @@ before we add our loaders --> create a sass file
 if I do npm run buind it will show an error --> no loaders are configured to process this file
 --> rules array with an object for each loader or each file type
 --> in general I could create more css files, import them or use them
+
+## HTML Webpack Plugin
+
+plugins are a little more powerful than loaders, can be used for many things
+
+--> we don't want to have to edit index.html, but just be able to delete dist folder and be able to npm run build & have it rebuilt
+
+npm i -D html-webpack-plugin
+--> whenever we have a plugin then we go under the module
+
+if we delete the dist folder & then npm run build again it will rebuild the dist folder
