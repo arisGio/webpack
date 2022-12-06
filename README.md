@@ -83,3 +83,6 @@ loaders will make it so you can load images right into your JS or CSS or SASS
 --> in this example we want to have sass files here, and have webpack compile our SASS or have the loader do it
 
 npm i -D sass style-loader css-loader sass-loader --> you can use node sass, but probably is deprecated now, maybe it's DART SASS
+
+before we add our loaders --> create a sass file
+& bring that into index.js
