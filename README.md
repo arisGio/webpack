@@ -128,3 +128,14 @@ we can make it auto reload as well which is nice
 
 --> default port: 8080, but we can change that
 --> stop server: CTRL + C
+
+now we want to add options to the dev server
+--> we used to contentBase but now we use static
+--> open: true --> it will open the browser automatically
+compress true --> will enable gzip compression
+
+npm run dev --. now the browser will open at 3000
+
+--> stop Live Server, no need to use it now
+
+we are not focusing on the functionality, but just showing the different things you can add to your environment
