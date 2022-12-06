@@ -101,3 +101,10 @@ npm i -D html-webpack-plugin
 --> whenever we have a plugin then we go under the module
 
 if we delete the dist folder & then npm run build again it will rebuild the dist folder
+
+## HTML Template
+
+--> if we type in some html and rebuild it will get rid of it
+
+after rebuild it updates the index.html with the code template.html has
+--> in dist folder index.html includes bundle.js & html of template.html

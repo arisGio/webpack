@@ -27,6 +27,7 @@ module.exports = {
             {
                 title: 'Webpack App',
                 filename: 'index.html',
+                template: 'src/template.html'
             }
         )
     ]
