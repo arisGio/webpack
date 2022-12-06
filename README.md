@@ -45,3 +45,6 @@ npm init -y --> skip the questions, creates the package.json file
 npm i -D webpack webpack-cli --> install webpack & webpack-cli as dev dependencies, creates the package-lock.json file, in package.json you should see under dev dependecies the newly installed packages
 
 to run webpack we need to create a script
+we have not set the mode yet so we use production mode for now, then run...
+
+npm run build --> in the dist folder we have main.js now, basically it looked at our source code here and it saw that in our generateJoke function we are returning something and we are console logging it etc...
