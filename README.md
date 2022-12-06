@@ -59,3 +59,5 @@ npm i uuid --> let's install UUID which will just generate a uuid number, if we 
 npm run build --> to rebuild it, so main.js now get's updated with the new code we previously wrote, and we can see this in the console too
 --> you can install any npm modules you want and use them
 --> now main.js is more complicated because we have that uuid code that's being compiled
+
+npm remove uuid --> we do not need this module so we remove it
