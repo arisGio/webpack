@@ -174,3 +174,10 @@ npm i -D babel-loader @babel/core @babel/preset-env --> they should have been ad
 then go to webpack.config.js and add one more rule about js files excluding files in the node_modules folder
 
 npm run build to make sure that after saving there are no errors
+
+## Asset Resource Loader
+
+you might also want to load images
+eg you have a logo or something eg an svg you want to load in js file
+--> we want to be able to bring that by importing it
+after importing it if you rebuild it you will get an error --> because we do not have a loader for this
