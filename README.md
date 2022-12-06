@@ -71,3 +71,5 @@ set mode development and remove mode production
 set the entry & the output
 --> by default, is looking at index.js & outputting to dist a main.js... but we can change all that around if you want to rename stuff
 \_\_dirname: take me to the current directory
+
+--> let's delete main.js & npm run build --> created a bundle.js file & we have to update in the index.html --> now it works properly as before
