@@ -48,3 +48,10 @@ to run webpack we need to create a script
 we have not set the mode yet so we use production mode for now, then run...
 
 npm run build --> in the dist folder we have main.js now, basically it looked at our source code here and it saw that in our generateJoke function we are returning something and we are console logging it etc...
+
+## Using NPM Modules
+
+now we can import and export our own JS modules
+--> we can also use npm modules
+--> let's see an example even though we don't need this module for our initial purposes
+npm i uuid --> let's install UUID which will just generate a uuid number, if we just reload, it is not going to work, we have to rebuild it
