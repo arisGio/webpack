@@ -31,3 +31,7 @@ that's basically the same thing we are doing here, although we are not using Rea
 for now let's create the index.html and later on we are going to install an html plugin --> so that we don't have to actually edit the html file in the dist folder --> will have a template in our src folder that we can edit, but just for now just add a boilerplate
 
 later on we will see how we can install the webpack dev server plugin --> so we won't actually need live server later
+
+## Creating Modules
+
+focus on the environment that we are building, not the app
