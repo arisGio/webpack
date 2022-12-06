@@ -163,3 +163,14 @@ source maps are good for debugging because a lot of times you are going to get a
 
 tweek webpack.config.js & npm run build to see the result
 --> we get a js.map source file --> which you can use in the browser in SOURCES and help you debbug
+
+## Babel Loader
+
+we want to add some other loaders
+--> if you want your code to be BACKWARDS COMPATIBLE with older browsers and so on --> use BABEL or the Babel Loader
+
+npm i -D babel-loader @babel/core @babel/preset-env --> they should have been added to package.json
+
+then go to webpack.config.js and add one more rule about js files excluding files in the node_modules folder
+
+npm run build to make sure that after saving there are no errors
