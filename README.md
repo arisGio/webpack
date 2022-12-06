@@ -73,3 +73,6 @@ set the entry & the output
 \_\_dirname: take me to the current directory
 
 --> let's delete main.js & npm run build --> created a bundle.js file & we have to update in the index.html --> now it works properly as before
+--> you could have multiple if you wanted to do some code splitting
+--> [name].js going to be bundle.js as you can see from the entry property
+--> since we are in development mode we have all this unnecessary lines of comments in bundle.js, in production mode is going to be much less code
