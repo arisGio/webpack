@@ -61,3 +61,13 @@ npm run build --> to rebuild it, so main.js now get's updated with the new code 
 --> now main.js is more complicated because we have that uuid code that's being compiled
 
 npm remove uuid --> we do not need this module so we remove it
+
+## Webpack Config File
+
+rebuild code
+it's going to be in common JS syntax
+config object
+set mode development and remove mode production
+set the entry & the output
+--> by default, is looking at index.js & outputting to dist a main.js... but we can change all that around if you want to rename stuff
+\_\_dirname: take me to the current directory
