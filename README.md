@@ -139,3 +139,13 @@ npm run dev --. now the browser will open at 3000
 --> stop Live Server, no need to use it now
 
 we are not focusing on the functionality, but just showing the different things you can add to your environment
+
+## Cleaning Up Hash Files
+
+in dist folder the files with hash filenames can add up, as we saw previously if you recall
+eg if we make a change to the code in index.js
+if we save that & run npm run build again it will add a new file
+
+clean: true --> will keep only one file and not 2 or more bundlehash1 bundlehash2 etc
+
+--> when you run the server, it's not running directly from the files in dist --> it's actually running it from memory
