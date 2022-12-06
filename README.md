@@ -108,3 +108,12 @@ if we delete the dist folder & then npm run build again it will rebuild the dist
 
 after rebuild it updates the index.html with the code template.html has
 --> in dist folder index.html includes bundle.js & html of template.html
+
+## Caching & Hash Setup
+
+google: caching webpack --> https://webpack.js.org/guides/caching/
+
+--> we can make it so instead of just being bundle.js, it's going to be bundle.hash (bunch of letters & numbers), you might have seen this if you've used react and there's other front-end frameworks that do this as well
+--> when they generate the assets --> they have some kind of hash --> and basically what happens is this will change every time the file changes --> which helps with caching
+
+delete dist folder and rebuild
