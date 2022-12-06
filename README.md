@@ -151,3 +151,15 @@ clean: true --> will keep only one file and not 2 or more bundlehash1 bundlehash
 --> when you run the server, it's not running directly from the files in dist --> it's actually running it from memory
 
 change code in index.js & npm run build --> does not create additional bundle files
+
+## Source Maps
+
+this is one more option we can add
+source maps are good for debugging because a lot of times you are going to get a message with a line number that does not show you where the actual problem is in your source code
+
+--> source maps provide a map for of from your dist or production code to your source code
+
+--> to enable source maps is easy..
+
+tweek webpack.config.js & npm run build to see the result
+--> we get a js.map source file --> which you can use in the browser in SOURCES and help you debbug
