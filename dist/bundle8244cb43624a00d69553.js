@@ -656,9 +656,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var laughImg = document.getElementById('laughImg');
+laughImg.src = _assets_laughing_svg__WEBPACK_IMPORTED_MODULE_2__;
 console.log((0,_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"])());
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundleb1f6109a6362192530d5.js.map
+//# sourceMappingURL=bundle8244cb43624a00d69553.js.map
