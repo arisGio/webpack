@@ -184,3 +184,5 @@ after importing it if you rebuild it you will get an error --> because we do not
 --> there is nothing we even have to install
 --> webpack comes with this asset resource loader --> so we just have to add, eg after the babel loader...
 --> we want it to stay as laughing.svg otherwise it wiil be renamed to something weird
+
+after rebuilding --> we have laughing svg in dist folder
