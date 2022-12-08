@@ -191,3 +191,13 @@ after rebuilding --> we have laughing svg in dist folder
 
 stop dev server
 install axios --> npm i axios
+
+you now have this environment, that you could use for anything that you want to build
+you can now use npm modules
+your own JS modules
+you can import sass files
+you can import svgs
+it's going to use babel
+you have a server with live reload
+you have source maps
+there are a lot of things that we used here
