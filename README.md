@@ -201,3 +201,12 @@ it's going to use babel
 you have a server with live reload
 you have source maps
 there are a lot of things that we used here
+
+## Webpack Bundle Analyzer
+
+this is a plugin which actually shows you like a screen of all of what your applications is built from
+what takes up the most space and all that
+
+npm i -D webpack-bundle-analyzer
+
+after tweeking webpack.config.js then we rebuild again --> it will open up a new page as a visual representation of our application
