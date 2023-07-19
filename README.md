@@ -39,28 +39,27 @@ error: cannot use import statement outside a module --> there is a way we can do
 webpack is going to take care of this for us...
 
 ## Webpack Install & Building
+<code>npm init -y</code> --> skip the questions, creates the package.json file
 
-npm init -y --> skip the questions, creates the package.json file
-
-npm i -D webpack webpack-cli --> install webpack & webpack-cli as dev dependencies, creates the package-lock.json file, in package.json you should see under dev dependecies the newly installed packages
+<code>npm i -D webpack webpack-cli</code> --> install webpack & webpack-cli as dev dependencies, creates the package-lock.json file, in package.json you should see under dev dependecies the newly installed packages
 
 to run webpack we need to create a script
 we have not set the mode yet so we use production mode for now, then run...
 
-npm run build --> in the dist folder we have main.js now, basically it looked at our source code here and it saw that in our generateJoke function we are returning something and we are console logging it etc...
+<code>npm run build</code> --> in the dist folder we have main.js now, basically it looked at our source code here and it saw that in our generateJoke function we are returning something and we are console logging it etc...
 
 ## Using NPM Modules
 
 now we can import and export our own JS modules
 --> we can also use npm modules
 --> let's see an example even though we don't need this module for our initial purposes
-npm i uuid --> let's install UUID which will just generate a uuid number, if we just reload, it is not going to work, we have to rebuild it
+<code>npm i uuid</code> --> let's install UUID which will just generate a uuid number, if we just reload, it is not going to work, we have to rebuild it
 
-npm run build --> to rebuild it, so main.js now get's updated with the new code we previously wrote, and we can see this in the console too
+<code>npm run build</code> --> to rebuild it, so main.js now get's updated with the new code we previously wrote, and we can see this in the console too
 --> you can install any npm modules you want and use them
 --> now main.js is more complicated because we have that uuid code that's being compiled
 
-npm remove uuid --> we do not need this module so we remove it
+<code>npm remove uuid</code> --> we do not need this module so we remove it
 
 ## Webpack Config File
 
@@ -69,12 +68,15 @@ it's going to be in common JS syntax
 config object
 set mode development and remove mode production
 set the entry & the output
---> by default, is looking at index.js & outputting to dist a main.js... but we can change all that around if you want to rename stuff
-\_\_dirname: take me to the current directory
+--> by default, is looking at <code>index.js</code> & outputting to <code>dist</code> a main.js... but we can change all that around if you want to rename stuff
+<code>\_\_dirname</code>: take me to the current directory
 
 --> let's delete main.js & npm run build --> created a bundle.js file & we have to update in the index.html --> now it works properly as before
+
 --> you could have multiple if you wanted to do some code splitting
+
 --> [name].js going to be bundle.js as you can see from the entry property
+
 --> since we are in development mode we have all this unnecessary lines of comments in bundle.js, in production mode is going to be much less code
 
 ## Loaders & Sass Compiling
@@ -82,7 +84,7 @@ set the entry & the output
 loaders will make it so you can load images right into your JS or CSS or SASS
 --> in this example we want to have sass files here, and have webpack compile our SASS or have the loader do it
 
-npm i -D sass style-loader css-loader sass-loader --> you can use node sass, but probably is deprecated now, maybe it's DART SASS
+<code>npm i -D sass style-loader css-loader sass-loader</code> --> you can use node sass, but probably is deprecated now, maybe it's DART SASS
 
 before we add our loaders --> create a sass file
 & bring that into index.js
@@ -97,7 +99,7 @@ plugins are a little more powerful than loaders, can be used for many things
 
 --> we don't want to have to edit index.html, but just be able to delete dist folder and be able to npm run build & have it rebuilt
 
-npm i -D html-webpack-plugin
+<code>npm i -D html-webpack-plugin</code>
 --> whenever we have a plugin then we go under the module
 
 if we delete the dist folder & then npm run build again it will rebuild the dist folder
@@ -124,17 +126,17 @@ we can set up the webpack dev server
 we can make it auto reload as well which is nice
 
 --> add dev script to package.json
---> npm run dev --> it will ask us if we want to install the webpack dev server --> y for YES
+--> <code>npm run dev</code> --> it will ask us if we want to install the webpack dev server --> y for YES
 
 --> default port: 8080, but we can change that
---> stop server: CTRL + C
+--> stop server: <code>CTRL + C</code>
 
 now we want to add options to the dev server
 --> we used to contentBase but now we use static
 --> open: true --> it will open the browser automatically
 compress true --> will enable gzip compression
 
-npm run dev --. now the browser will open at 3000
+<code>npm run dev</code> --. now the browser will open at 3000
 
 --> stop Live Server, no need to use it now
 
@@ -169,11 +171,11 @@ tweek webpack.config.js & npm run build to see the result
 we want to add some other loaders
 --> if you want your code to be BACKWARDS COMPATIBLE with older browsers and so on --> use BABEL or the Babel Loader
 
-npm i -D babel-loader @babel/core @babel/preset-env --> they should have been added to package.json
+<code>npm i -D babel-loader @babel/core @babel/preset-env</code> --> they should have been added to package.json
 
 then go to webpack.config.js and add one more rule about js files excluding files in the node_modules folder
 
-npm run build to make sure that after saving there are no errors
+<code>npm run build</code> to make sure that after saving there are no errors
 
 ## Asset Resource Loader
 
@@ -190,7 +192,7 @@ after rebuilding --> we have laughing svg in dist folder
 ## Finish The Joke App
 
 stop dev server
-install axios --> npm i axios
+install axios --> <code>npm i axios</code>
 
 you now have this environment, that you could use for anything that you want to build
 you can now use npm modules
@@ -207,6 +209,6 @@ there are a lot of things that we used here
 this is a plugin which actually shows you like a screen of all of what your applications is built from
 what takes up the most space and all that
 
-npm i -D webpack-bundle-analyzer
+<code>npm i -D webpack-bundle-analyzer</code>
 
 after tweeking webpack.config.js then we rebuild again --> it will open up a new page as a visual representation of our application
